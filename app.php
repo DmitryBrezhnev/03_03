@@ -57,7 +57,7 @@
 		// 2 username
 		// 3 password
 		// 4 database
-		$mysql = new mysqli("localhost", $db_webpr2016, $_webpr16, "messages_sample");
+		$mysql = new mysqli("localhost", $db_webpr2016, $db_webpr16, "messages_sample");
 		
 		$stmt = $mysql->prepare("INSERT INTO messages_sample (recipient, message) VALUES (?,?)");
 			
@@ -101,4 +101,3 @@
 
 <form>
 
-<p>Idea</p>

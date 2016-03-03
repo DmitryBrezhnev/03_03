@@ -1,7 +1,7 @@
 <?php
 	// require another php file
 	// ../../../ => 3 folders back
-	require_once("../../../config.php");
+	require_once("../../config.php");
 	$everything_was_okay = true;
 	//*********************
 	// TO field validation
@@ -57,7 +57,7 @@
 		// 2 username
 		// 3 password
 		// 4 database
-		$mysql = new mysqli("localhost", $db_username, $db_password, "webpr2016_dmibre");
+		$mysql = new mysqli("localhost", $db_webpr2016, $_webpr16, "messages_sample");
 		
 		$stmt = $mysql->prepare("INSERT INTO messages_sample (recipient, message) VALUES (?,?)");
 			
@@ -84,6 +84,8 @@
 	
 	
 ?>
+<br>
+<a href="table.php">app</a>
 
 <h2> First application </h2>
 

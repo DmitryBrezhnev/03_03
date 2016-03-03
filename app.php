@@ -1,7 +1,7 @@
 <?php
 	// require another php file
 	// ../../../ => 3 folders back
-	require_once("../config.php");
+	require_once("../../config.php");
 	$everything_was_okay = true;
 	//*********************
 	// TO field validation
